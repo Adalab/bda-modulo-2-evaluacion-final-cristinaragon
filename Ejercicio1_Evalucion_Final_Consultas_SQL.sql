@@ -1,6 +1,6 @@
 -- Ejercicio 1
 USE adalab_pelis;
--- Fase 4: Obtener informaciñon con consultas SQL
+-- Fase 4: Obtener información con consultas SQL
 
 -- 1. ¿Cuántas películas tienen una duración superior a 120 minutos?
 SELECT COUNT(*) AS total_peliculas

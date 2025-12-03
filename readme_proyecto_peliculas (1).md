@@ -73,9 +73,9 @@ Creación de DB **Adalab_pelis** y tabla `peliculas`.
 
 ---
 
-## 🔹 Fase 4 — Consultas SQL
+## 🔹 Fase 4 — Consultas SQL, con DER
 Incluye agregaciones, filtros, patrones y estadísticas.
-
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fgithub.com%2Frmotr-group-projects%2Fwdd-w3-rmotr-sakila&psig=AOvVaw2xKSe6pS0j6ygqJEGHfP41&ust=1764878147895000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMDnp9CZopEDFQAAAAAdAAAAABAM
 ---
 
 # 🎬 5. Ejercicio 2: SQL Avanzado con Sakila
@@ -83,7 +83,7 @@ Consultas avanzadas utilizando múltiples JOINs, REGEXP y cálculos agregados.
 
 ---
 
-# 📊 7. Resultados Destacados
+# 📊 6. Resultados Destacados
 - ✔️ Más de 100 películas cargadas correctamente en MySQL
 - ✔️ Flujo ETL automatizado con Python
 - ✔️ Consultas avanzadas que combinan hasta 4 tablas

@@ -6,43 +6,47 @@ USE adalab_pelis;
 SELECT COUNT(*) AS total_peliculas
 FROM peliculas
 WHERE duracion_minutos >120;
+-- 2. -- ¿Cuántas películas incluyen subtítulos en español?
+SELECT COUNT(DISTINCT film_id) AS películas_subtitulos_en_español
+FROM subtitles
+WHERE language_code = 'es';
 
--- 2. ¿Cuántas películas tienen contenido adulto?
+-- 3. ¿Cuántas películas tienen contenido adulto?
 SELECT COUNT(*) AS total_peliculas_adulto
 FROM peliculas 
 WHERE contenido_adulto =1;
 
--- 3. ¿Cuál es la película más antigua registrada en la base de datos?
+-- 4. ¿Cuál es la película más antigua registrada en la base de datos?
 SELECT titulo, ano_lanzamiento
 FROM peliculas
 ORDER BY ano_lanzamiento ASC -- si no especifico es ASC
 LIMIT 1;
 
--- 4. Muestra el promedio de duración de las películas agrupado por género
+-- 5. Muestra el promedio de duración de las películas agrupado por género
 SELECT AVG(duracion_minutos) AS promedio_duracion, genero
 FROM peliculas
 GROUP BY genero
 ORDER BY promedio_duracion;
 
--- 5. ¿Cuántas películas por año se han registrado en la base de datos?
+-- 6. ¿Cuántas películas por año se han registrado en la base de datos?
 SELECT ano_lanzamiento, COUNT(*) AS peliculas_por_año
 FROM peliculas
 GROUP BY ano_lanzamiento
 ORDER BY peliculas_por_año DESC;
 
--- 6. ¿Cuál es el año con más películas en la base de datos?
+-- 7. ¿Cuál es el año con más películas en la base de datos?
 SELECT ano_lanzamiento
 FROM peliculas
 GROUP BY ano_lanzamiento
 ORDER BY COUNT(*) DESC
 LIMIT 1;
 
--- 7. Obtén un listado de todos los géneros y cuántas películas corresponden a cada uno
+-- 8. Obtén un listado de todos los géneros y cuántas películas corresponden a cada uno
 SELECT genero, COUNT(*) AS total_peliculas
 FROM peliculas
 GROUP BY genero;
 
--- 8. Muestra todas las películas cuyo título contenga la palabra "Godfather"
+-- 9. Muestra todas las películas cuyo título contenga la palabra "Godfather"
 SELECT titulo
 FROM peliculas
 WHERE titulo REGEXP 'Godfather';

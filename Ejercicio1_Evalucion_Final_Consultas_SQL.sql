@@ -6,6 +6,7 @@ USE adalab_pelis;
 SELECT COUNT(*) AS total_peliculas
 FROM peliculas
 WHERE duracion_minutos >120;
+
 -- 2. -- ¿Cuántas películas incluyen subtítulos en español?
 SELECT COUNT(DISTINCT film_id) AS películas_subtitulos_en_español
 FROM subtitles
